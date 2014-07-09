@@ -23,6 +23,7 @@ public class FourchanThreadHarvester implements Runnable {
 
     private final Consumer<String> trainable;
     private final String board;
+
     private final Integer threadNo;
 
     /**
