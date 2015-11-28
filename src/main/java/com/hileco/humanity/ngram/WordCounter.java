@@ -1,7 +1,7 @@
 package com.hileco.humanity.ngram;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * A map of strings to integers, use {@link #count(String)} to increment the value for a given key.
@@ -14,7 +14,7 @@ public class WordCounter {
     private Integer total;
 
     public WordCounter() {
-        this.map = new HashMap<>();
+        this.map = new ConcurrentHashMap<>();
         this.total = 0;
     }
 
